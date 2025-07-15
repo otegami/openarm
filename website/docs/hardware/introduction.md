@@ -1,13 +1,13 @@
 ---
-id: introduction
 title: Introduction
+sidebar_position: 1
 ---
 
 # OpenArm v1.0 Hardware Guide
 
 Welcome to the hardware documentation of **OpenArm v1.0**!
 
-This guide gives all the hardware information, and   will help you assemble, wire, and test OpenArm v1.0. The assembly instructions here focus on the **right arm**, but the **left arm follows nearly identical steps**, with any necessary differences clearly highlighted.
+This guide gives all the hardware information, and will help you assemble, wire, and test OpenArm v1.0. The assembly instructions here focus on the **right arm**, but the **left arm follows nearly identical steps**, with any necessary differences clearly highlighted.
 
 ---
 
@@ -25,9 +25,9 @@ Each step is illustrated with diagrams or photos, along with tips and gotchas to
 
 ## 🛠️ Assembly Quick Overview
 
-> **Estimated time**: 2–3 hours for the bimanual setup   
-> **Skill level**: Intermediate  
-> **Tools required**: Allen keys, screwdriver set, patience, and attention to detail
+- **Estimated time**: 2–3 hours for the bimanual setup
+- **Skill level**: Intermediate
+- **Tools required**: Allen keys, screwdriver set, patience, and attention to detail
 
 ---
 
