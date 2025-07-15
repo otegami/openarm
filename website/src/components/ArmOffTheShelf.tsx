@@ -1,6 +1,5 @@
 import React from 'react';
 import ComponentPhoto from './ComponentPhoto';
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 const components = [
   { name: 'M3x6 bolt', image:'M3_6.png', model: 'CBE3-6', qty: 146, unitPrice: '¥44', totalPrice: '¥6,424', supplier: 'MiSUMi' },
@@ -38,7 +37,7 @@ export default function ArmOffTheShelf() {
         {components.map((comp) => (
           <tr key={comp.name} style={{ height: '10em', textAlign: 'center', backgroundColor: 'transparent' }}>
             <td>{comp.name}</td>
-            <td><ComponentPhoto src={useBaseUrl(`/img/BOM/arm/${comp.image}`)} alt={comp.name} /></td>
+            <td><ComponentPhoto src={require(`@site/static/img/BOM/arm/${comp.image}`).default} alt={comp.name} /></td>
             <td>{comp.model}</td>
             <td>{comp.qty}</td>
             <td>{comp.unitPrice}</td>

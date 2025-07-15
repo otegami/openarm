@@ -1,6 +1,5 @@
 import React from 'react';
 import ComponentPhoto from './ComponentPhoto';
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 const components = [
   { name: 'Miniature Linear Guide Standard Block', image: 'rse2b10-155.png', model: 'RSE2B10-155', qty: 2, unitPrice: '¥14,940', totalPrice: '¥29,880', supplier: 'MiSUMi'},
@@ -30,7 +29,7 @@ export default function OffTheShelfTable() {
         {components.map((comp) => (
           <tr key={comp.name} style={{ height: '10em', textAlign: 'center', backgroundColor: 'transparent' }}>
             <td>{comp.name}</td>
-            <td><ComponentPhoto src={useBaseUrl(`/img/BOM/ee/${comp.image}`)} alt={comp.name} /></td>
+            <td><ComponentPhoto src={require(`@site/static/img/BOM/ee/${comp.image}`).default} alt={comp.name} /></td>
             <td>{comp.model}</td>
             <td>{comp.qty}</td>
             <td>{comp.unitPrice}</td>

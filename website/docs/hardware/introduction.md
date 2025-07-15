@@ -1,6 +1,6 @@
 ---
+id: intro
 title: Introduction
-sidebar_position: 1
 ---
 
 # OpenArm v1.0 Hardware Guide

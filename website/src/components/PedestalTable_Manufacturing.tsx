@@ -1,6 +1,5 @@
 import React from 'react';
 import ComponentPhoto from './ComponentPhoto';
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 const components = [
   { name: '250x190mm Base Plate', image: 'base_plate.png', model: 'MVBLK-ASN-47X-ALR8G-L', qty: 1, unitPrice: '¥10,081', totalPrice: '¥10,081', method: 'Metal Cutting (CNC)', material: 'Al6061', manufacturer: 'MiSUMi MEVIY'},
@@ -26,7 +25,7 @@ export default function PedestalManufacturedTable() {
           {components.map((comp) => (
             <tr key={comp.name} style={{ height: '10em', textAlign: 'center', backgroundColor: 'transparent' }}>
               <td>{comp.name}</td>
-              <td><ComponentPhoto src={useBaseUrl(`/img/BOM/pedestal/${comp.image}`)} alt={comp.name} /></td>
+              <td><ComponentPhoto src={require(`@site/static/img/BOM/pedestal/${comp.image}`).default} alt={comp.name} /></td>
               <td>{comp.model}</td>
               <td>{comp.qty}</td>
               <td>{comp.unitPrice}</td>

@@ -1,8 +1,8 @@
 ---
+id: troubleshooting
 title: Troubleshooting
-sidebar_position: 4
 ---
 
 # Troubleshooting
 
-TODO
+This page will help you debug common issues during the assembly of OpenArm.

@@ -3,8 +3,6 @@ id: final-checks
 title: Final Checks
 ---
 
-import useBaseUrl from '@docusaurus/useBaseUrl';
-
 # ✅ Final Checks
 
 Before powering on or using the robotic arm, go through the following final checks to ensure safe and correct operation.

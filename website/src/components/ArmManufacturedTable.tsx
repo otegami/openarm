@@ -1,6 +1,5 @@
 import React from 'react';
 import ComponentPhoto from './ComponentPhoto';
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 const components = [
   { name: 'J1_A', image: 'J1_A.png', model: 'MVBLK-ASN-47X-F8WUL-L', qty: 2, unitPrice: '¥7,230', totalPrice: '¥14,460', method: 'Metal Cutting (CNC)', material: 'Al6061', manufacturer: 'MiSUMi MEVIY'},
@@ -52,7 +51,7 @@ export default function ArmManufacturedTable() {
         {components.map((comp) => (
           <tr key={comp.name} style={{ height: '10em', textAlign: 'center', backgroundColor: 'transparent' }}>
             <td>{comp.name}</td>
-            <td><ComponentPhoto src={useBaseUrl(`/img/BOM/${comp.image}`)} alt={comp.name} /></td>
+            <td><ComponentPhoto src={require(`@site/static/img/BOM/${comp.image}`).default} alt={comp.name} /></td>
             <td>{comp.model}</td>
             <td>{comp.qty}</td>
             <td>{comp.unitPrice}</td>

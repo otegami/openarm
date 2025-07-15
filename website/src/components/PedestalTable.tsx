@@ -1,6 +1,5 @@
 import React from 'react';
 import ComponentPhoto from './ComponentPhoto';
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 const components = [
   { name: '60x60 750mm Aluminum Extrusion', image: 'extrusion.png', model: 'HFSB6-6060-750', qty: 1, unitPrice: '¥2,760', totalPrice: '¥2,760', supplier: 'MiSUMi'},
@@ -28,7 +27,7 @@ export default function PedestalTable() {
         {components.map((comp) => (
           <tr key={comp.name} style={{ height: '10em', textAlign: 'center', backgroundColor: 'transparent' }}>
             <td>{comp.name}</td>
-            <td><ComponentPhoto src={useBaseUrl(`/img/BOM/pedestal/${comp.image}`)} alt={comp.name} /></td>
+            <td><ComponentPhoto src={require(`@site/static/img/BOM/pedestal/${comp.image}`).default} alt={comp.name} /></td>
             <td>{comp.model}</td>
             <td>{comp.qty}</td>
             <td>{comp.unitPrice}</td>

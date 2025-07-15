@@ -1,6 +1,5 @@
 import React from 'react';
 import ComponentPhoto from './ComponentPhoto';
-import useBaseUrl from '@docusaurus/useBaseUrl';
 
 const components = [
   { name: 'Rail Connector', image: 'rail_connector.png', model: 'MVSHM-3N0304G-47X-2982S-L', qty: 2, unitPrice: '¥2,969', totalPrice: '¥5,938', method: 'Sheet Metal Fabrication', material: 'SUS304', manufacturer: 'MiSUMi MEVIY'},
@@ -30,7 +29,7 @@ export default function EEManufacturedTable() {
         {components.map((comp) => (
           <tr key={comp.name} style={{ height: '10em', textAlign: 'center', backgroundColor: 'transparent' }}>
             <td>{comp.name}</td>
-            <td><ComponentPhoto src={useBaseUrl(`/img/BOM/ee/${comp.image}`)} alt={comp.name} /></td>
+            <td><ComponentPhoto src={require(`@site/static/img/BOM/ee/${comp.image}`).default} alt={comp.name} /></td>
             <td>{comp.model}</td>
             <td>{comp.qty}</td>
             <td>{comp.unitPrice}</td>
