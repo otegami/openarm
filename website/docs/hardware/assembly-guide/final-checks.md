@@ -65,7 +65,7 @@ Follow this sequence to safely power on the robotic arm:
 
 Need help or something’s not working?
 
-👉 Visit the [Troubleshooting Guide](./troubleshooting)  
+👉 Visit the [Troubleshooting Guide](/hardware/troubleshooting)  
 💬 Join the community on [Discord](https://discord.gg/example)  
 📬 Contact us through [support@example.com](mailto:support@example.com)
 
