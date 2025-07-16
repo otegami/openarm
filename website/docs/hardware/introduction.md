@@ -3,11 +3,11 @@ title: Introduction
 sidebar_position: 1
 ---
 
-# OpenArm v1.0 Hardware Guide
+# OpenArm 1 Hardware Guide
 
-Welcome to the hardware documentation of **OpenArm v1.0**!
+Welcome to the hardware documentation of **OpenArm 1**!
 
-This guide gives all the hardware information, and will help you assemble, wire, and test OpenArm v1.0. The assembly instructions here focus on the **right arm**, but the **left arm follows nearly identical steps**, with any necessary differences clearly highlighted.
+This guide gives all the hardware information, and will help you assemble, wire, and test OpenArm 1. The assembly instructions here focus on the **right arm**, but the **left arm follows nearly identical steps**, with any necessary differences clearly highlighted.
 
 ---
 
@@ -15,7 +15,7 @@ This guide gives all the hardware information, and will help you assemble, wire,
 
 This documentation is structured to guide you from unboxing components all the way to final system checks. It’s divided into two main sections:
 
-- **Specifications**: A detailed overview of OpenArm v1.0’s design, features, and performance capabilities.
+- **Specifications**: A detailed overview of OpenArm 1’s design, features, and performance capabilities.
 - **Bill of Materials**: A complete list of required mechanical and electronic parts.
 - **Assembly Guide**: Step-by-step instructions for putting together each subassembly.
 
