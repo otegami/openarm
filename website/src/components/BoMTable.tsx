@@ -52,11 +52,13 @@ const tableStyles = {
     height: '10em',
     textAlign: 'center' as const,
     borderBottom: '1px solid var(--ifm-color-emphasis-300)',
+    backgroundColor: 'transparent',
   },
   bodyCell: {
     padding: '0.5rem',
     borderRight: '1px solid var(--ifm-color-emphasis-300)',
     verticalAlign: 'middle' as const,
+    backgroundColor: 'transparent',
   },
 };
 
