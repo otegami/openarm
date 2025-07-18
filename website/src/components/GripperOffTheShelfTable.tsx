@@ -17,7 +17,7 @@ import React, {
 } from 'react';
 import BoMTable, { type BoMTableColumn } from './BoMTable';
 
-export interface EndEffectorOffTheShelfComponent {
+export interface GripperOffTheShelfComponent {
   name: string;
   image: string;
   model: string;
@@ -26,7 +26,7 @@ export interface EndEffectorOffTheShelfComponent {
   supplier: string;
 }
 
-const components: EndEffectorOffTheShelfComponent[] = [
+const components: GripperOffTheShelfComponent[] = [
   { name: 'Miniature Linear Guide Standard Block', image: 'rse2b10-155.png', model: 'RSE2B10-155', quantity: 2, unitPrice: '14940', supplier: 'MiSUMi'},
   { name: 'M3x5 bolt', image: 'm3-5.png', model: 'CBE3-5', quantity: 8, unitPrice: '70', supplier: 'MiSUMi'},
   { name: 'M3x8 bolt', image: 'm3-8.png', model: 'CBE3-8', quantity: 20, unitPrice: '56', supplier: 'MiSUMi'},
@@ -35,7 +35,7 @@ const components: EndEffectorOffTheShelfComponent[] = [
   { name: 'Bearing', image: 'mr126zz.png', model: 'MR126ZZ', quantity: 8, unitPrice: '482', supplier: 'MiSUMi'},
 ];
 
-const columns: BoMTableColumn<EndEffectorOffTheShelfComponent>[] = [
+const columns: BoMTableColumn<GripperOffTheShelfComponent>[] = [
   { header: 'Name', key: 'name' },
   { header: 'Photo', key: 'image' },
   { header: 'Model Number', key: 'model' },
@@ -45,13 +45,13 @@ const columns: BoMTableColumn<EndEffectorOffTheShelfComponent>[] = [
   { header: 'Supplier', key: 'supplier' },
 ];
 
-export default function EndEffectorOffTheShelfTable(): ReactNode {
+export default function GripperOffTheShelfTable(): ReactNode {
   return (
     <BoMTable
       type="off-the-shelf"
       components={components}
       columns={columns}
-      imageBasePath="end-effector-off-the-shelf"
+      imageBasePath="gripper-off-the-shelf"
     />
   );
 }
