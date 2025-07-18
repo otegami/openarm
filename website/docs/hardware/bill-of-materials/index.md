@@ -28,4 +28,4 @@ This checklist includes **all components** required for assembling the **OpenArm
 
 ## ⚡ Electrical Components
 
-- [x] [All electrical components](electrical) (Cost: ¥93,544)
+- [x] [All electrical components](electrical) (Cost: ¥84,904)
