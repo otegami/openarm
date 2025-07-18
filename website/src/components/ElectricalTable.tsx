@@ -27,15 +27,15 @@ export interface ElectricalComponent {
 }
 
 const components: ElectricalComponent[] = [
-  { name: 'USB2CANFD converter', image: 'usb2canfd.jpg', model: 'USB2CANFD-X2', quantity: 2, unitPrice: 25000, supplier: 'Pibiger'},
+  { name: 'USB2CANFD converter', image: 'usb2canfd.jpg', model: 'USB2CANFD-X2', quantity: 2, unitPrice: 20680, supplier: 'Pibiger'},
   { name: 'J1/J2 to Hub Cable', image: 'j1.png', model: 'XL2506130075-3', quantity: 4, unitPrice: 384, supplier: 'LCSC'},
   { name: 'J3+J4 to Hub Cable', image: 'j3-j4.png', model: 'XL2506130075-2', quantity: 2, unitPrice : 806, supplier: 'LCSC'},
   { name: 'J4+J5+J6+J7 to Hub Cable', image: 'j4-j7.png', model: 'XL2506130075-1', quantity: 2, unitPrice: 1515, supplier: 'LCSC'},
-  { name: 'J7 to J8 Cable', image: 'images.jpg', model: 'Undecided', quantity: 2, unitPrice: 450, supplier: 'LCSC'},
-  { name: 'Communication Cable', image: 'images.jpg', model: 'Undecided', quantity: 2, unitPrice: 450, supplier: 'LCSC'},
-  { name: 'Power Supply', image: 'power-supply.jpg', model: '', quantity: 2, unitPrice: 14634, supplier: 'AliExpress'},
-  { name: 'PCB', image: 'pcb.png', model: '24V 15A 1005004204524395', quantity: 2, unitPrice: 887, supplier: 'JLCPCB'},
-  { name: 'Connector', image: 'images.jpg', model: 'C19268029', quantity: 12, unitPrice: 60, supplier: 'LCSC'},
+  { name: 'J7 to J8 Cable', image: 'j7-j8.png', model: 'XL2507150103-1', quantity: 2, unitPrice: 256, supplier: 'LCSC'},
+  { name: 'Communication Cable', image: 'communication.png', model: 'XL2507150103-2', quantity: 2, unitPrice: 197, supplier: 'LCSC'},
+  { name: 'Power Supply', image: 'power-supply.jpg', model: '24V 15A 1005004204524395', quantity: 2, unitPrice: 14634, supplier: 'AliExpress'},
+  { name: 'PCB', image: 'pcb.png', model: '', quantity: 2, unitPrice: 887, supplier: 'JLCPCB'},
+  { name: 'Connector', image: 'connector.jpg', model: 'C19268029', quantity: 12, unitPrice: 60, supplier: 'LCSC'},
   { name: 'Emergency Stop', image: 'estop.jpg', model: 'FB1W-HW1B-V402R-Y0', quantity: 1, unitPrice: 4698, supplier: 'Monotaro'},
 ];
 

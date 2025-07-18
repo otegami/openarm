@@ -5,7 +5,7 @@ sidebar_position: 5
 
 import BlockImage from '@site/src/components/BlockImage';
 
-This installation guide provides instructions for setting up the leader-follower configuration of the OpenArm 1 system. The leader and follower systems are physically identical, with the only distinction being the end-effector configuration.
+This installation guide provides instructions for setting up the leader-follower configuration of the OpenArm system. The leader and follower systems are physically identical, with the only distinction being the end-effector configuration.
 
 ## Power
 
@@ -15,6 +15,9 @@ This installation guide provides instructions for setting up the leader-follower
 4. The two output cables from each E-stop should be connected to the corresponding hubs of the arms.
 <BlockImage src="hardware/installation/power.png" alt="power" width="80%" />
 
+:::tip
+For heavy payload handling, consider using two power supplies per follower arm. Connect `J1 and J2` (the highest torque joints) to one dedicated power supply, and power the remaining joints `(J3–J8)` using a second supply. This configuration ensures stable performance under high-load conditions.
+:::
 ---
 
 ## Communication
