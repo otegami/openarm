@@ -17,7 +17,7 @@ import React, {
 } from 'react';
 import BoMTable, { type BoMTableColumn } from './BoMTable';
 
-export interface EndEffectorManufacturedComponent {
+export interface GripperManufacturedComponent {
   name: string;
   image: string;
   model: string;
@@ -28,14 +28,14 @@ export interface EndEffectorManufacturedComponent {
   manufacturer: string;
 }
 
-const components: EndEffectorManufacturedComponent[] = [
+const components: GripperManufacturedComponent[] = [
   { name: 'rail_connector', image: 'rail-connector.png', model: 'MVSHM-3N0304G-47X-2982S-L', quantity: 2, unitPrice: '2969', method: 'Sheet Metal Fabrication', material: 'SUS304', manufacturer: 'MiSUMi MEVIY'},
   { name: 'rotor_controller', image: 'rotor-controller.png', model: 'MVBLK-ASN-487-ZX4P6-L', quantity: 2, unitPrice: '7414', method: 'Metal Cutting (CNC)', material: 'Al6061', manufacturer: 'MiSUMi MEVIY'},
   { name: 'gripper_linkage', image: 'rotor-linkage.png', model: 'MVBLK-SUB-487-HZGNT-L', quantity: 4, unitPrice: '8133', method: 'Metal Cutting (CNC)', material: 'SUS304', manufacturer: 'MiSUMi MEVIY'},
   { name: 'rail_CNC_attachment', image: 'rail-cnc-attachment.png', model: 'MVBLK-ASN-487-JNRUX-L', quantity: 4, unitPrice: '4600', method: 'Metal Cutting (CNC)', material: 'Al6061', manufacturer: 'MiSUMi MEVIY'},
 ];
 
-const columns: BoMTableColumn<EndEffectorManufacturedComponent>[] = [
+const columns: BoMTableColumn<GripperManufacturedComponent>[] = [
   { header: 'Name', key: 'name' },
   { header: 'Photo', key: 'image' },
   { header: 'Model Number', key: 'model' },
@@ -47,13 +47,13 @@ const columns: BoMTableColumn<EndEffectorManufacturedComponent>[] = [
   { header: 'Manufacturer', key: 'manufacturer' }
 ];
 
-export default function EndEffectorManufacturedTable(): ReactNode {
+export default function GripperManufacturedTable(): ReactNode {
   return (
     <BoMTable
       type="manufactured"
       components={components}
       columns={columns}
-      imageBasePath="end-effector-manufactured"
+      imageBasePath="gripper-manufactured"
     />
   );
 }
