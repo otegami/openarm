@@ -29,10 +29,10 @@ export interface EndEffectorManufacturedComponent {
 }
 
 const components: EndEffectorManufacturedComponent[] = [
-  { name: 'Rail Connector', image: 'rail-connector.png', model: 'MVSHM-3N0304G-47X-2982S-L', quantity: 2, unitPrice: '2969', method: 'Sheet Metal Fabrication', material: 'SUS304', manufacturer: 'MiSUMi MEVIY'},
-  { name: 'Rotor Controller', image: 'rotor-controller.png', model: 'MVBLK-ASN-487-ZX4P6-L', quantity: 2, unitPrice: '7414', method: 'Metal Cutting (CNC)', material: 'Al6061', manufacturer: 'MiSUMi MEVIY'},
-  { name: 'EE Linkage', image: 'rotor-linkage.png', model: 'MVBLK-SUB-487-HZGNT-L', quantity: 4, unitPrice: '8133', method: 'Metal Cutting (CNC)', material: 'SUS304', manufacturer: 'MiSUMi MEVIY'},
-  { name: 'Rail CNC attachment', image: 'rail-cnc-attachment.png', model: 'MVBLK-ASN-487-JNRUX-L', quantity: 4, unitPrice: '4600', method: 'Metal Cutting (CNC)', material: 'Al6061', manufacturer: 'MiSUMi MEVIY'},
+  { name: 'rail_connector', image: 'rail-connector.png', model: 'MVSHM-3N0304G-47X-2982S-L', quantity: 2, unitPrice: '2969', method: 'Sheet Metal Fabrication', material: 'SUS304', manufacturer: 'MiSUMi MEVIY'},
+  { name: 'rotor_controller', image: 'rotor-controller.png', model: 'MVBLK-ASN-487-ZX4P6-L', quantity: 2, unitPrice: '7414', method: 'Metal Cutting (CNC)', material: 'Al6061', manufacturer: 'MiSUMi MEVIY'},
+  { name: 'gripper_linkage', image: 'rotor-linkage.png', model: 'MVBLK-SUB-487-HZGNT-L', quantity: 4, unitPrice: '8133', method: 'Metal Cutting (CNC)', material: 'SUS304', manufacturer: 'MiSUMi MEVIY'},
+  { name: 'rail_CNC_attachment', image: 'rail-cnc-attachment.png', model: 'MVBLK-ASN-487-JNRUX-L', quantity: 4, unitPrice: '4600', method: 'Metal Cutting (CNC)', material: 'Al6061', manufacturer: 'MiSUMi MEVIY'},
 ];
 
 const columns: BoMTableColumn<EndEffectorManufacturedComponent>[] = [
