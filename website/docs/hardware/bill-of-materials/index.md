@@ -1,6 +1,4 @@
 ---
-title: Parts List
-sidebar_position: 1
 description: "Complete lists of all components needed to build OpenArm, including mechanical parts, electronics, and off-the-shelf components."
 ---
 
