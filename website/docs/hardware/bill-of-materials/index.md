@@ -19,10 +19,10 @@ This checklist includes **all components** required for assembling the **OpenArm
 
 ## 🛠️ Mechanical Components
 
-- [x] [All manufactured arm parts](arm-manufactured) (Cost: ¥306,026)
+- [x] [All manufactured arm parts](arm-manufactured) (Cost: ¥316,018)
 - [x] [All off-the-shelf arm parts](arm-off-the-shelf) (Cost: ¥34,336)
 - [x] [All pedestal components](pedestal) (Cost: ¥20,222)
-- [x] [All gripper components](gripper) (Cost: ¥117,930)
+- [x] [All gripper components](gripper) (Cost: ¥107,942)
 
 ---
 
