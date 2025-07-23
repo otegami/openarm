@@ -2,7 +2,9 @@
 sidebar_position: 1
 ---
 
-# Teleop
+# Teleoperation
 
-...
+OpenArm supports teleoperation:
 
+* [Leader-Follower teleoperation](leader-follower/)
+* [VR teleoperation](vr)

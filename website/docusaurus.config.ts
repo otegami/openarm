@@ -122,6 +122,12 @@ const config: Config = {
           position: 'left',
           label: 'Simulation',
         },
+        {
+          type: 'docSidebar',
+          sidebarId: 'helpSidebar',
+          position: 'left',
+          label: 'Help',
+        },
         // {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/enactic/openarm',
@@ -155,6 +161,10 @@ const config: Config = {
             {
               label: 'Simulation',
               to: '/simulation/',
+            },
+            {
+              label: 'Help',
+              to: '/help/',
             },
           ],
         },
