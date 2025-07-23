@@ -1,0 +1,49 @@
+---
+title: Control
+sidebar_position: 2
+---
+
+import BlockImage from '@site/src/components/BlockImage';
+
+# Control
+
+To get started, follow this [Robot Description](../description) guide to install ROS2 first to setup and test the OpenArm description package which you will need for ROS2 control.
+
+## Setup
+
+The [openarm_ros2](https://github.com/enactic/openarm_ros2) repository contains a collection of packages for use with [ros2_control](https://control.ros.org/humble/index.html).
+
+It abstracts away the hardware control to expose the arm as a interface that receives position, velocity, and torque commands and outputs joint states.
+
+To get started, clone the openarm_ros2 repository, build the packages, and source the workspace.
+```sh
+git clone https://github.com/enactic/openarm_ros2 ~/ros2_ws/src/openarm_ros2
+cd ~/ros2_ws && colcon build
+source ~/ros2_ws/install/setup.bash
+```
+
+## MoveIt2
+
+[MoveIt2](https://moveit.picknik.ai/main/index.html) is a framework for manipulators that combines inverse kinematics, perception, and control.
+
+<BlockImage src="software/ros2/bimanual-moveit2.png" alt="MoveIt2 Static" width="65%" />
+<br/>
+
+After sourcing the workspace, launch a demo:
+
+```sh
+ros2 launch openarm_bimanual_moveit_config demo.launch.py
+```
+
+### Motion Planning
+
+<BlockImage src="software/ros2/bimanual-moveit2-planning.png" alt="MoveIt2 Planning" width="65%" />
+<br/>
+
+Target positions can be set in the `Joints` tab in the MotionPlanning panel on the left. Alternatively, the targets on the arms can be dragged and rotated to a target pose, or the goal state can be selected from a list of preset keypoints under `Planning` > `Goal State`
+
+The `Planning` tab provides a GUI to generate trajectories to reach a goal position. Clicking on `Plan` to preview the path is recommended.
+
+## ROS2 Bridging Node
+
+...
