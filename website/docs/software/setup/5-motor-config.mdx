@@ -5,6 +5,16 @@ sidebar_position: 5
 
 # Step 5: Motor Configuration
 
+## Prerequisites
+
+Before proceeding, ensure you have:
+- ✅ Motor IDs configured (Step 1)
+- ✅ OpenArm CAN library built (Step 2)
+- ✅ CAN interface configured (Step 3)
+- ✅ Basic communication tested (Step 4)
+
+## Overview
+
 We now need to complete the motor setup process. This involves three key tasks:
 
 - Configure motor baudrate to match your CAN device for reliable communication
@@ -12,6 +22,7 @@ We now need to complete the motor setup process. This involves three key tasks:
 - Test motor communication to verify everything is working correctly
 
 All the necessary scripts are located in the setup folder.
+
 
 ## Step 1: Set Motor Baudrate
 
@@ -53,7 +64,7 @@ python3 change_baudrate.py --baudrate 1000000 --canid 1 --socketcan can0 --flash
 ## Step 2: Set Zero Position
 
 :::warning
-Be sure to move the physical arm to zero position before setting zero!
+Physically position the arm to your desired zero position before setting it! For grippers, the closed position is used as zero.
 :::
 
 Set the zero position for a specific motor:
