@@ -2,19 +2,17 @@
 sidebar_position: 1
 ---
 
-import { formatPrice } from '@site/src/utils/priceUtils';
-import { ArmManufacturedTotalCost } from '@site/src/components/ArmManufacturedTable';
-import { ArmOffTheShelfTotalCost } from '@site/src/components/ArmOffTheShelfTable';
-import { PedestalManufacturedTotalCost } from '@site/src/components/PedestalManufacturedTable';
-import { PedestalOffTheShelfTotalCost } from '@site/src/components/PedestalOffTheShelfTable';
-import { GripperManufacturedTotalCost } from '@site/src/components/GripperManufacturedTable';
-import { GripperOffTheShelfTotalCost } from '@site/src/components/GripperOffTheShelfTable';
-import { ElectricalTotalCost } from '@site/src/components/ElectricalTable';
 import BlockImage from '@site/src/components/BlockImage';
+import BoMSummary from '@site/src/components/BoMSummary';
 
 # Procuring Components
 
 This section outlines how to source all required components for this project.
+ :::info
+ All the prices are mentioned in Japanese Yen.
+ :::
+
+<BoMSummary />
 
 ## 📦 Mechanical Components
 
@@ -27,7 +25,7 @@ All required components are listed in the Bill of Materials section, with model 
 
 ---
 
-### ✅ Off-the-shelf Components
+### 🛒 Off-the-shelf Components
 
 Most mechanical and fastener components are available as catalog items from **[MISUMI](https://jp.misumi-ec.com/)**.
 
@@ -83,7 +81,7 @@ You may also:
 
 ---
 
-## 🔌Electrical Components
+## ⚡Electrical Components
 
 This project uses a mix of off-the-shelf electronic modules and custom PCBs and wiring harnesses.
 Below are recommendations on how to procure them.
@@ -134,7 +132,7 @@ For custom electronics, we provide pre-designed PCB layouts and wire harness dia
 
 <BlockImage src="hardware/bom/procurement/jlcpcb-step5.png" alt="jlcpcb-5" width="70%" />
 
-8. Upload the BOM and CPL files, and click on `Process BOM & CPL`.
+8. Upload the **[BOM](/file/hardware/bill-of-materials/electrical/bom-for-hub.csv)** and **[CPL](/file/hardware/bill-of-materials/electrical/cpl-for-hub.xlsx)** files, and click on `Process BOM & CPL`.
 
 <BlockImage src="hardware/bom/procurement/jlcpcb-step6.png" alt="jlcpcb-6" width="70%" />
 
@@ -171,5 +169,4 @@ For custom electronics, we provide pre-designed PCB layouts and wire harness dia
 
 ## ⚙️ Motors
 
-If you are interested in purchasing motors, please **contact us directly via email** at **[openarm@enactic.ai](mailto:openarm@enactic.ai)**.
-We will assist you with pricing, availability, and shipping details.
+If you are interested in purchasing motors, please visit **[our Purchase page](/getting-started/purchase)**. We will assist you with pricing, availability, and shipping details.
