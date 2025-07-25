@@ -24,12 +24,12 @@ Before running any further steps, we need to first ensure that the motor sender 
 
 ---
 
-This guide explains how to configure (otherwise known as flashing) Damiao motors for use in the OpenArm system.
+This guide explains how to configure (otherwise known as flashing) Damiao motors for use in OpenArm.
 It walks through installing the debugging tool, assigning motor IDs, and connecting power and CAN wiring.
 Excerpted from: https://wiki.seeedstudio.com/damiao_series/
 
 :::note
-Motor ID configuration can also be accomplished via direct CAN frame transmission if you know the existing ID (usually 0x01), however this approach is risky and not included in this tutorial.
+Motor ID configuration can also be accomplished via direct CAN frame transmission if you know the existing ID (usually 0x01), however this approach is not included in this tutorial.
 :::
 
 ## Install Damiao Debugging Tools
@@ -100,7 +100,7 @@ Configure Damiao motor IDs before running any code on the arm.
 
 ### Simple Calibration
 
-Hit calibrate, and the motor should start moving. (No need to save calibration after.)
+Hit calibrate, and the motor should start moving. You don't have to save the results, but the identified parameters can be informative.
 
 <BlockImage src="software/setup/damiao-debugging-tools-calibrate.png" alt="Damiao Debugging Tools calibrate" width="20%" />
 
@@ -108,17 +108,17 @@ Hit calibrate, and the motor should start moving. (No need to save calibration a
 
 In the Test tab:
 
-1. Under CAN ID, set CAN IDs by clicking Read with the motor connected.  
+1. Under CAN ID, set CAN IDs by clicking Read with the motor connected.
 If you have multiple motors daisy chained together, you can control all of them by setting the CAN ID to the last motor in the chain.
-2. Under Control Commands, click Enter to start the motor.  
+2. Under Control Commands, click Enter to start the motor.
 (Redo every time the motor reboots, the LED above the GH1.25 3-pin port should glow green)
-3. Under Control Parameter, set your values.    
-A simple test is to set the Tor (torque) to a value like 1.  
+3. Under Control Parameter, set your values.
+A simple test is to set the Tor (torque) to a value like 1.
 For other controls, refer to [the official motor documentation](https://wiki.seeedstudio.com/damiao_series/)
-4. Under CAN Data, click Update to pull the values from Control Parameter.  
+4. Under CAN Data, click Update to pull the values from Control Parameter.
 (Redo whenever you input new values)
 5. Under CAN Data, click Send to send the values to the motors and have them start spinning.
-6. To stop, set the values under Control Parameter to 0 and Update.  
+6. To stop, set the values under Control Parameter to 0 and Update.
 Simply clicking Stop will hard stop the motors, only do in case of emergency.
 
 [//]: # (maybe add img here)
@@ -135,7 +135,7 @@ If the motor starts but fails to rotate: Check the current provided and compare 
 <br/>
 
 :::note[NOTE *]
-This wire comes with only one end. You might need to solder another male connector.
+You might need to solder another male connector if you are using the cables in the motor package.
 
 <BlockImage src="software/setup/hardware-setup-can-wire.png" alt="CAN wire" width="60%" />
 :::

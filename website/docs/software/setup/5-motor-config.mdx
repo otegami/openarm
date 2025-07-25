@@ -9,9 +9,9 @@ sidebar_position: 5
 
 Before proceeding, ensure you have:
 - ✅ Motor IDs configured (Step 1)
-- ✅ OpenArm CAN library built (Step 2)
-- ✅ CAN interface configured (Step 3)
-- ✅ Basic communication tested (Step 4)
+- ✅ CAN interface configured (Step 2)
+- ✅ Basic communication tested (Step 3)
+- ✅ OpenArm CAN library built (Step 4)
 
 ## Overview
 
@@ -31,19 +31,20 @@ All the necessary scripts are located in the setup folder.
 - Motor parameters has a 10000 time write limits, it should not be run frequently in scripts.
 :::
 
-Set the baudrate for each motor (replace `1` with your motor CAN ID and `1000000` with desired baudrate):
+Set the baudrate for each motor (replace `1` with your motor CAN ID and `5000000` with desired baudrate):
 
 Set temporarily:
 ```bash
-python3 change_baudrate.py --baudrate 1000000 --canid 1 --socketcan can0
+python3 change_baudrate.py --baudrate 5000000 --canid 1 --socketcan can0
 ```
 
 Save permanently:
 
 ```bash
-python3 change_baudrate.py --baudrate 1000000 --canid 1 --socketcan can0 --flash
+python3 change_baudrate.py --baudrate 5000000 --canid 1 --socketcan can0 --flash
 ```
-**Important:** After completing the baudrate configuration, reconfigure your CAN interface to match the motor's new baudrate setting for proper communication.
+
+**Important:** After completing the baudrate configuration, reconfigure your CAN interface to match the motor's new baudrate setting for proper communication if necessary.
 
 **Supported Baudrates:**
 
@@ -64,7 +65,7 @@ python3 change_baudrate.py --baudrate 1000000 --canid 1 --socketcan can0 --flash
 ## Step 2: Set Zero Position
 
 :::warning
-Physically position the arm to your desired zero position before setting it! For grippers, the closed position is used as zero.
+Physically position the motors to your desired zero position before setting it, especially if you have already assembled the arm! For grippers, the closed position is used as zero.
 :::
 
 Set the zero position for a specific motor:
@@ -79,23 +80,22 @@ Or set zero position for all motors (IDs 001-008):
 
 ## Step 3: Verify Motor Communication
 
-
 Run the motor check executable, replace `1` and `17` with your motor's send and receive CAN IDs.
-The `motor_check` executable should be available in the build directory from the library compilation.
+The `motor-check` executable should be available in the build directory from the library compilation.
 If it's missing, rebuild the project. Note: CAN ID 17 is the decimal representation of 0x11
 
 For CAN 2.0
 ```bash
 cd openarm_can/build
-./motor_check 1 17 can0
+./motor-check 1 17 can0
 ```
 
 For CAN FD mode:
 ```bash
-./motor_check 1 17 can0 -fd
+./motor-check 1 17 can0 -fd
 ```
 
-The output should display the motor's receiver ID, baudrate, and current status information.
+The output should display the motor's receiver ID, baudrate, and status information.
 
 **Verification steps:**
 1. **Check baudrate**: Verify the displayed baudrate matches what you configured earlier

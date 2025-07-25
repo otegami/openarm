@@ -16,10 +16,10 @@ Make sure you have motors and communication devices at your hands.
 - Cables (the ones come with the motor package should be enough)
 
 ### Communication Device Requirements
-- For Motor ID setup
+- For motor ID setup
   - Damiao USB CAN Debugger
   - Computer running Windows
 
-- For CANFD baudrate configuration and control
+- For motor control and further setup
   - SocketCAN-compatible interface device
   - Computer running Ubuntu 22.04/24.04 or other linux with SocketCAN support ([Install Ubuntu →](../ubuntu/))
